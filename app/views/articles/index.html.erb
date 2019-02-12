@@ -1,3 +1,4 @@
+<br>
 <div class="container">
 
   <h1>List of articles</h1>
@@ -5,8 +6,7 @@
     <ul>
       <% @articles.each do |article| %>
         <li>
-        <%= link_to article.title, article_path(article) %> -
-          <span class="glyphicon glyphicon-trash"> </span>
+        <%= link_to article.title, article_path(article) %>
             <%= link_to article_path(article),
             method: :delete,
             data: { confirm: "Are you sure?" } do %> <span class="glyphicon glyphicon-trash"></span>
@@ -14,11 +14,8 @@
         </li>
       <% end %>
     </ul>
-  </div>
-<br><br><br>
 <hr>
-
-  <div class="btn btn-lg">
+  <div class="btn btn-md">
     <span class="glyphicon glyphicon-plus"></span>
     <%=link_to "Add a new article", article_path(@articles) %>
   </div>

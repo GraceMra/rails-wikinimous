@@ -1,0 +1,16 @@
+<div class="container">
+
+  <div class="alert alert-secondary" role="alert">
+    <h2><%= @article.title %>
+      <button type="button" class="btn btn-default btn-sm" <span class="glyphicon glyphicon-pencil"></span> <%=link_to "Edit this article", article_path(@article)%></h2></button>
+
+    <br><br>
+    <p>Details of the article:</p>
+    <h3><%= @article.content %></h3>
+      <br>
+
+      <hr>
+      <%=link_to "Back to list", articles_path%>
+  </div>
+</div>
+
