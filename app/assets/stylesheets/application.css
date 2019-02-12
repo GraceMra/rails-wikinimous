@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+.alert h2 {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
